@@ -4,6 +4,9 @@ public class StringCalculator {
         int returnValue = 0;
         String[] numbersArray = numbers.split(",|\n");
         for (String number : numbersArray) {
+            if (Integer.parseInt(number) < 0){
+                throw new IllegalArgumentException("negatives not allowed.");
+            }
             if (!number.trim().isEmpty()) {
                 returnValue += Integer.parseInt(number.trim());
             }

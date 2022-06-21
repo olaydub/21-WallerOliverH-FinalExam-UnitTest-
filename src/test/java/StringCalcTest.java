@@ -20,21 +20,21 @@ public class StringCalcTest {
     public void testAdd1(){
         String add = "-1, 5";
         Exception exception = assertThrows(Exception.class, () -> s.add(add));
-        assertEquals("negatives not allowed", exception.getMessage());
+        assertEquals("negatives not allowed.", exception.getMessage());
     }
     @Test
     public void testAdd2(){
         String add = "-1, -5";
         Exception exception = assertThrows(Exception.class, () -> s.add(add));
-        assertEquals("negatives not allowed", exception.getMessage());
+        assertEquals("negatives not allowed.", exception.getMessage());
     }
     @Test
     public void testAdd3(){
         String add = "1, -5";
         Exception exception = assertThrows(Exception.class, () -> s.add(add));
-        assertEquals("negatives not allowed", exception.getMessage());
+        assertEquals("negatives not allowed.", exception.getMessage());
     }
 
-    
+
 
 }
