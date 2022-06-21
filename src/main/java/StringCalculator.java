@@ -7,7 +7,7 @@ public class StringCalculator {
             if (Integer.parseInt(number) < 0){
                 throw new IllegalArgumentException("negatives not allowed.");
             }
-            if (!number.trim().isEmpty()) {
+            if (!number.trim().isEmpty() && Integer.parseInt(number.trim()) <= 1000) {
                 returnValue += Integer.parseInt(number.trim());
             }
         }
