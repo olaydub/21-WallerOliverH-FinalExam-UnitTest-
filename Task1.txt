@@ -1,5 +1,7 @@
 1. Extending the add method:
 	A. parse the input string and check if a number is less than zero
+	B. Check for numbers greater than 1000 and ignore them
 2. Writing the test class:
 	B. create a series of assertThrows an exception when the first, second, or both 
 	   tokens in the string are negative
+	C. create a series of tests that check if either number is greater than 1000
