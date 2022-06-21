@@ -34,6 +34,15 @@ public class StringCalcTest {
         Exception exception = assertThrows(Exception.class, () -> s.add(add));
         assertEquals("negatives not allowed.", exception.getMessage());
     }
+    @Test
+    public void testAddIgnore(){
+        String add = "1, 1001";
+        Exception exception = assertThrows(Exception.class, () -> s.add(add));
+        assertEquals("negatives not allowed.", exception.getMessage());
+    }
+
+
+
 
 
 
