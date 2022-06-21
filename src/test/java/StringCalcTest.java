@@ -39,6 +39,26 @@ public class StringCalcTest {
         String add = "1,1000";
         assertEquals(1, s.add(add));
     }
+    @Test
+    public void testAddIgnore2(){
+        String add = "1,2000";
+        assertEquals(1, s.add(add));
+    }
+    @Test
+    public void testAddIgnore3(){
+        String add = "1000,20";
+        assertEquals(20, s.add(add));
+    }
+    @Test
+    public void testAddIgnore4(){
+        String add = "1000,2000";
+        assertEquals(0, s.add(add));
+    }
+    @Test
+    public void testAddReal1(){
+        String add = "10,20";
+        assertEquals(30, s.add(add));
+    }
 
 
 
