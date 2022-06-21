@@ -36,8 +36,7 @@ public class StringCalcTest {
     }
     @Test
     public void testAddIgnore(){
-        String add = "1, 1000";
-        Exception exception = assertThrows(Exception.class, () -> s.add(add));
+        String add = "1,1000";
         assertEquals(1, s.add(add));
     }
 
